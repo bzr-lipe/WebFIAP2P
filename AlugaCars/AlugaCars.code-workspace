@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Aula-2308"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AlugaCars"
+	}
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Tabelas - JS</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container my-3">
+
+
+        <h1>Tabelas</h1>
+
+        <table class="table table-responsive text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nome do Herói</th>
+                    <th>Força</th>
+                    <th>Agilidade</th>
+                    <th>Velocidade</th>
+                    <th>XP Final</th>
+                </tr>
+            </thead>
+
+            <tbody id="herois" >
+                <tr id="heroi1" class="heroi">
+                    <td class="nome">Heroi 1</td>
+                    <td class="forca">96</td>
+                    <td class="agilidade">94</td>
+                    <td class="velocidade">95</td>
+                    <td class="xp">0</td>
+                </tr>
+                <tr id="heroi2" class="heroi">
+                    <td class="nome">Heroi 2</td>
+                    <td class="forca">86</td>
+                    <td class="agilidade">84</td>
+                    <td class="velocidade">85</td>
+                    <td class="xp">0</td>
+                </tr>
+                <tr id="heroi3" class="heroi">
+                    <td class="nome">Heroi 3</td>
+                    <td class="forca">76</td>
+                    <td class="agilidade">74</td>
+                    <td class="velocidade">75</td>
+                    <td class="xp">0</td>
+                </tr>
+                <tr id="heroi4" class="heroi">
+                    <td class="nome">Heroi 4</td>
+                    <td class="forca">66</td>
+                    <td class="agilidade">64</td>
+                    <td class="velocidade">65</td>
+                    <td class="xp">0</td>
+                </tr>
+                <tr id="heroi5" class="heroi">
+                    <td class="nome">Heroi 5</td>
+                    <td class="forca">46</td>
+                    <td class="agilidade">44</td>
+                    <td class="velocidade">45</td>
+                    <td class="xp">0</td>
+                </tr>
+                <tr id="heroi6" class="heroi">
+                    <td class="nome">Heroi 6</td>
+                    <td class="forca">36</td>
+                    <td class="agilidade">34</td>
+                    <td class="velocidade">35</td>
+                    <td class="xp">0</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">Linha Vermelha = Rever XP Herói</td>
+                </tr>
+                <tr class="text-end">
+                    <td colspan="5">
+                        <button class="btn btn-dark" id="btnCalcularXP">Calcular XP</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- <script src="./js/dom.js"></script> -->
+    <script src="./js/calcularXp.js"></script>
+</body>
+
+</html>
