@@ -10,9 +10,28 @@ btnCalcular.addEventListener('click', function() {
         let velocidade = Number(herois[i].querySelector('.velocidade').textContent);
         let xpFinal=(forca+ agilidade+ velocidade)/3;
         herois[i].querySelector('.xp').textContent = xpFinal.toFixed(1);
+
+        if(xpFinal<=70) {
+            herois[i].classList.add('bg-danger', 'text-light')
+        }
+
+
     }
 });
 
 // function mensagem (){
 //     alert('oi')
 // }
+
+
+
+//sortear um numero
+let numero = parseInt(Math.random()*100);
+console.log(numero);
+
+const numeros = [];
+    for (let i = 0; i <=19; i++) {
+        numeros[i] = parseInt(Math.random()*100);
+    }
+
+console.log(numeros);
