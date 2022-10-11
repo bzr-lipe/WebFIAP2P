@@ -23,7 +23,8 @@ function blockRect(r1,r2){
 					const mostrar =Math.floor(Math.random() * 21);
 					console.log(`Valor Colisão Acima= ${mostrar}`);
 					r1.posY +=20;
-					
+					dano();
+					dano2();
 
 			} else {
 				r1.posY -= overlapY;
@@ -31,6 +32,9 @@ function blockRect(r1,r2){
 					const mostrar =Math.floor(Math.random() * 21);
 				console.log(`Valor Colisão Abaixo= ${mostrar}`);
 				r1.posY -=20;
+				dano();
+				dano2();
+				
 					
 			}
 		} else {//colisão pela esquerda ou direita
@@ -40,14 +44,16 @@ function blockRect(r1,r2){
 					const mostrar =Math.floor(Math.random() * 21);
 					console.log(`Valor Colisão Esquerda= ${mostrar}`);					
 					r1.posX +=20
+					dano();
+					dano2();
 				} else {
 					r1.posX -= overlapX;
 					
 					const mostrar =Math.floor(Math.random() * 21);
 					console.log(`Valor Colisão Direita= ${mostrar}`);	
 					r1.posX -=20
-
-				
+					dano();
+					dano2();
 			}
 		}
 	}

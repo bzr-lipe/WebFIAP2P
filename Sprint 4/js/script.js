@@ -3,6 +3,10 @@
 	let cnv = document.querySelector("#meuCanvas");
 	let ctx = cnv.getContext("2d");
 	let blk;
+
+	const height = canvas.height = 480;
+
+	cnv.style.marginTop = window.innerHeight / 2 - height / 2 + "px";
 	
 	//Teclas
 	const LEFT = 37

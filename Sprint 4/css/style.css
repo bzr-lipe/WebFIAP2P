@@ -12,14 +12,48 @@ h2{
 #meuCanvas{
     border: 3px solid #d9376e;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #aaaaaa;
     width:500px;
     height:500px;
-    border-radius: 50%;
+
 }
+
 
 .arena {
     display: flex;
 }
 
+.canvas {
+    background: #EEE;
+    display: block;
+    margin: 0 auto;
+  }
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+.arena {
+    width: 50%;
+
+    align-items: center;
+}
+
+.players {
+    width: 50%;
+    
+}
+
+.player {
+    width: 312px;
+    justify-content: center;
+    align-items: center;
+    border: solid 6px #000;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

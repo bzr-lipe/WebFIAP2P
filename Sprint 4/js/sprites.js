@@ -1,4 +1,4 @@
-let vida=100;
+
 
 var Sprite = function(posX, posY, width, height, color,){
 	this.posX = posX;
