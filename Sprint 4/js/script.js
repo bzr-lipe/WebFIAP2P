@@ -6,7 +6,6 @@
 
 	const height = canvas.height = 480;
 
-	cnv.style.marginTop = window.innerHeight / 2 - height / 2 + "px";
 	
 	//Teclas
 	const LEFT = 37
@@ -28,14 +27,14 @@
 	
 	
 	//Objetos instanciados com os seguintes parâmetros: posX, posY, Largura, Altura e cor
-	var player1 = new Sprite(90, 16, 40, 20, "#d9376e",);
+	var player1 = new Sprite(50, 16, 40, 20, "#d9376e",);
 	sprites.push(player1);
 	
 	
-	let player2 = new Sprite(180, 110, 40, 20, "#f00");
+	let player2 = new Sprite(210, 110, 40, 20, "#f00");
 	sprites.push(player2);
 	
-	let block1 = new Sprite(75, 67, 150, 10, "#000");
+	let block1 = new Sprite(75, 1000, 10, 10, "#000");
 	sprites.push(block1);
 	blocks.push(block1);
 	

@@ -24,7 +24,6 @@ function blockRect(r1,r2){
 					console.log(`Valor Colisão Acima= ${mostrar}`);
 					r1.posY +=20;
 					dano();
-					dano2();
 
 			} else {
 				r1.posY -= overlapY;
@@ -33,9 +32,6 @@ function blockRect(r1,r2){
 				console.log(`Valor Colisão Abaixo= ${mostrar}`);
 				r1.posY -=20;
 				dano();
-				dano2();
-				
-					
 			}
 		} else {//colisão pela esquerda ou direita
 			if(posicaoX > 0){//colisão pela esquerda
@@ -45,7 +41,6 @@ function blockRect(r1,r2){
 					console.log(`Valor Colisão Esquerda= ${mostrar}`);					
 					r1.posX +=20
 					dano();
-					dano2();
 				} else {
 					r1.posX -= overlapX;
 					
@@ -53,7 +48,6 @@ function blockRect(r1,r2){
 					console.log(`Valor Colisão Direita= ${mostrar}`);	
 					r1.posX -=20
 					dano();
-					dano2();
 			}
 		}
 	}
