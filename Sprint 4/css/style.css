@@ -96,6 +96,9 @@ h2{
 
 .page2{
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 .controles {
     border: 6px solid #000;
@@ -122,4 +125,13 @@ h2{
 .controles-player1, .controles-player2 {
     text-align: center;
 
+}
+
+#myImage {
+    width: 100px;
+    height: 100px;
+}
+
+.robo2 {
+    filter: hue-rotate(180deg);
 }

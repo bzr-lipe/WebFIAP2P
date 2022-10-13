@@ -2,11 +2,22 @@
 	//variáveis
 	let cnv = document.querySelector("#meuCanvas");
 	let ctx = cnv.getContext("2d");
+	let img = document.getElementById("myImage");
 	let blk;
 
 	const height = canvas.height = 480;
 
+	window.onload = function (){
+		// The page is completely loaded now
+		// You can reference the image element
+		let img = document.getElementById("myImage");
+		context.drawImage(img, 40, 20);
+	}
 	
+	ctx.drawImage(
+		img, 0, 0
+	)
+
 	//Teclas
 	const LEFT = 37
 	const UP = 38
@@ -27,7 +38,7 @@
 	
 	
 	//Objetos instanciados com os seguintes parâmetros: posX, posY, Largura, Altura e cor
-	var player1 = new Sprite(50, 16, 40, 20, "#d9376e",);
+	var player1 = new Sprite(50, 16, 40, 20, "#d9376e");
 	sprites.push(player1);
 	
 	
@@ -188,15 +199,14 @@
 
 	//Renderização ou desenho na tela
 	function render(){
-		ctx.clearRect(0,0,cnv.width,cnv.height);
+		ctx.clearRect(0,0,cnv.width,cnv.height);	
 		for(let i in sprites){
 			let spr = sprites[i];
 			if(spr.visible){
-				ctx.fillStyle = spr.color;
-				ctx.beginPath();
-				ctx.arc(1000,50,40,0,2*Math.PI);
-				ctx.stroke();
-				ctx.fillRect(spr.posX, spr.posY, spr.width, spr.height);
+				ctx.drawImage(img, spr.posX-18, spr.posY-13,80, 40);
+				ctx.imageSmoothingQuality = 'high';
+				ctx.imageSmoothingEnabled = true;
+				
 			}
 		}		
 	}

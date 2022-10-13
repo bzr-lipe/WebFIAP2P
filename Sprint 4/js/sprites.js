@@ -1,6 +1,6 @@
 
 
-var Sprite = function(posX, posY, width, height, color,){
+var Sprite = function(posX, posY, width, height,color ){
 	this.posX = posX;
 	this.posY = posY;
 	this.width = width;
@@ -8,6 +8,14 @@ var Sprite = function(posX, posY, width, height, color,){
 	this.color = color;
 	this.visible = true;
 }
+
+var spriteSheetURL = "../images/robo.png";
+var image = new Image();
+image.src = spriteSheetURL;
+image.crossOrigin = true;
+
+
+
 //Retorna  largura
 Sprite.prototype.halfWidth = function(){
 	return this.width/2;
