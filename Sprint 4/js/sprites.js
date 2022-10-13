@@ -1,12 +1,13 @@
 
 
-var Sprite = function(posX, posY, width, height,color ){
+var Sprite = function(posX, posY, width, height,color, filter){
 	this.posX = posX;
 	this.posY = posY;
 	this.width = width;
 	this.height = height;
 	this.color = color;
 	this.visible = true;
+	this.filter = filter;
 }
 
 var spriteSheetURL = "../images/robo.png";

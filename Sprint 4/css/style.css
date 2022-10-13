@@ -5,7 +5,7 @@
 }
 
 :root{
-    --color-main: #006963;
+    --color-main: #d396ff;
 }
 
 body {
@@ -27,7 +27,7 @@ h2{
     width:400px;
     height:400px;
     margin: 0 auto;
-
+    box-shadow: 0 0 100px 1px rgb(208, 0, 255);
 }
 
 
@@ -86,6 +86,7 @@ h2{
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
     color: #EEE;
+    box-shadow: 0 0 100px 1px rgb(13, 0, 255);
 }
 
 
@@ -109,6 +110,7 @@ h2{
     background-color: rgba(0, 0, 0, 0.7);
     color: #EEE;
     border: solid 6px var(--color-main);
+    
 }
 
 .constroles-titulo {
@@ -130,8 +132,12 @@ h2{
 #myImage {
     width: 100px;
     height: 100px;
+    display: none;
 }
 
-.robo2 {
-    filter: hue-rotate(180deg);
+#myImage2 {
+    width: 100px;
+    height: 100px;
+    display: none;
 }
+

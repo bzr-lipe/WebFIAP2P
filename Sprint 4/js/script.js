@@ -7,16 +7,7 @@
 
 	const height = canvas.height = 480;
 
-	window.onload = function (){
-		// The page is completely loaded now
-		// You can reference the image element
-		let img = document.getElementById("myImage");
-		context.drawImage(img, 40, 20);
-	}
-	
-	ctx.drawImage(
-		img, 0, 0
-	)
+
 
 	//Teclas
 	const LEFT = 37
@@ -35,15 +26,28 @@
 	//Arrays
 	let sprites = [];
 	let blocks = [];
+
+	function mudarcor(){
+		let filter = ctx.filter = 'hue-rotate(180deg)';
+	}
+
+	
 	
 	
 	//Objetos instanciados com os seguintes parâmetros: posX, posY, Largura, Altura e cor
-	var player1 = new Sprite(50, 16, 40, 20, "#d9376e");
+	var player1 = new Sprite(50, 16, 40, 20, "#d9376e",);
 	sprites.push(player1);
 	
 	
-	let player2 = new Sprite(210, 110, 40, 20, "#f00");
+	let player2 = new Sprite(210, 110, 40, 20, "black",);
 	sprites.push(player2);
+	
+
+
+	
+
+	
+
 	
 	let block1 = new Sprite(75, 1000, 10, 10, "#000");
 	sprites.push(block1);
@@ -196,19 +200,29 @@
 		}			
 		
 	}
-
+	let img2 = document.getElementById("myImage2");
 	//Renderização ou desenho na tela
 	function render(){
 		ctx.clearRect(0,0,cnv.width,cnv.height);	
 		for(let i in sprites){
 			let spr = sprites[i];
-			if(spr.visible){
+			if(i==0){
 				ctx.drawImage(img, spr.posX-18, spr.posY-13,80, 40);
 				ctx.imageSmoothingQuality = 'high';
 				ctx.imageSmoothingEnabled = true;
-				
 			}
-		}		
+			if (i==1) {
+				ctx.drawImage(img2, spr.posX-18, spr.posY-13,80, 40);
+				ctx.imageSmoothingQuality = 'high';
+				ctx.imageSmoothingEnabled = true;
+			
+
+			}
+			
+		}	
+
 	}
+
+
 	loop();
 }());
