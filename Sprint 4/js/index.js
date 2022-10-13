@@ -13,7 +13,7 @@ let health = 100;
 const healthBarWidth = 200;
 const healthBarHeight = 30;
 const x = width / 2 - healthBarWidth / 2;
-const y = height / 2.55 - healthBarHeight / 2;
+const y = height / 5 - healthBarHeight / 2;
 
 const healthBar = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "green");
 const healthBar2 = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "green");
