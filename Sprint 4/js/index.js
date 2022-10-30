@@ -15,8 +15,8 @@ const healthBarHeight = 30;
 const x = width / 2 - healthBarWidth / 2;
 const y = height / 5 - healthBarHeight / 2;
 
-const healthBar = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "green");
-const healthBar2 = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "green");
+const healthBar = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "rgb(43, 255, 0)");
+const healthBar2 = new HealthBar(x, y, healthBarWidth, healthBarHeight, health, "rgb(43, 255, 0)");
 
 const frame = function () {
   context.clearRect(0, 0, width, height);
@@ -50,13 +50,11 @@ function dano() {
 
   if (healthBar.health <= 0) {
     health = 100;
-    healthBar.color = "black";
     alert("PLAYER 1 VENCEU!");
     location.reload()
   }
   if (healthBar2.health <= 0){
     health = 100;
-    healthBar.color = "black";
     alert("PLAYER 2 VENCEU!");
     location.reload()
   }

@@ -10,13 +10,6 @@ var Sprite = function(posX, posY, width, height,color, filter){
 	this.filter = filter;
 }
 
-var spriteSheetURL = "../images/robo.png";
-var image = new Image();
-image.src = spriteSheetURL;
-image.crossOrigin = true;
-
-
-
 //Retorna  largura
 Sprite.prototype.halfWidth = function(){
 	return this.width/2;

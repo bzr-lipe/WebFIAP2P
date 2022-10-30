@@ -1,0 +1,4 @@
+abar o aplicativo pelo caminho:
+-----------------------------------
+/pages/menu.html
+----------------------------------

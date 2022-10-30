@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExWEB</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container w-80">
+        <div class="bg-info p-4 mt-3 ">
+            <h1 class="text-light fw-light display-4 ">Grand Hotel</h1>
+        </div>
+        <div>
+            <table id="resumo" class="table table-hover text-center">
+                <thead class="table-dark">
+                    <th>Nome do Hospede</th>
+                    <th>Quant. adultos</th>
+                    <th>Quant. crianças</th>
+                    <th>No. Diárias</th>
+                    <th>Suíte escolhida</th>
+                    <th>Valor Diária</th>
+                    <th>Valor Final</th>
+                </thead>
+                <tbody class="historico">
+
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mt-4">Sistema de Reservas</h2>
+        <form action="" class="dados" id="dados" method="post">
+            <div class="row">
+                <!-- user -->
+                <div class="mb-4">
+                    <label for="usuario" class="form-label">Nome do Hospede</label>
+                    <input class="form-control" type="text" id="usuario" name="usuario" placeholder="ex: Darth Vader" required autofocus>
+                </div>
+                <!-- adultos -->
+                <div class="col-lg-6 mb-4">
+                    <label for="adultos" class="form-label">Número de adultos</label>
+                    <input type="number" placeholder="ex: 6" class="form-control" id="adultos" name="adultos" required >
+                </div>
+                <!-- criancas -->
+                <div class="col-lg-6 mb-4">
+                    <label for="criancas" class="form-label">Número de crianças</label>
+                    <input type="number" placeholder="ex: 5" class="form-control" id="criancas" name="criancas" required >
+                </div>
+                <!-- diarias -->
+                <div class="col-lg-6 mb-4">
+                    <label for="diarias" class="form-label">Número de diárias</label>
+                    <input type="number" placeholder="ex: 7" class="form-control" id="diarias" name="diarias" required >
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <label for="suite" class="form-label">Selecione sua suíte</label>
+                    <select id="suite" class="form-select">
+                        <option value="Imperial Beach">Imperial Beach</option>
+                        <option value="Master Beach">Master Beach</option>
+                        <option value="Bangalô Beach">Bangalô Beach</option>
+                        <option value="palladium-beach">Palladium Beach</option>
+                    </select>
+                </div> 
+
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary">Efetuar Reserva</button>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
